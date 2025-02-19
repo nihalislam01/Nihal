@@ -1,0 +1,40 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 95vh;
+}
+
+.intro .header-box {
+    border-top: 2px solid var(--secondary-main);
+    border-bottom: 2px solid var(--secondary-main);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.intro .email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    text-transform: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+    .intro .email {
+        padding: 8px 12px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .intro .email {
+        padding: 8px 12px;
+    }
+}
+
+
+

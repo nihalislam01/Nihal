@@ -1,0 +1,37 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 5vh;
+    border-bottom: 1px solid var(--secondary-main);
+}
+.navigation .header {
+    font-size: 16px !important;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.theme-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--secondary-main);
+    border-radius: 5px;
+}
+
+.theme-box div {
+    padding: 0px 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.theme-box .selected {
+    background-color: #adb5bd;
+}
+
+@media only screen and (max-width: 767px) {
+    .navigation .sections {
+        display: none;;
+    } 
+}
+  
+  

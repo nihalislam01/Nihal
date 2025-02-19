@@ -1,0 +1,121 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.title {
+    display: flex;
+    gap: clamp(10px, 1.5vw, 20px);
+    align-items: center;
+    margin-bottom: clamp(10px, 2vw, 30px);
+    margin-top: clamp(10px, 2vw, 30px);
+}
+
+.horizontal-line {
+    flex-grow: 1;
+    border-bottom: 1px solid var(--secondary-main);
+}
+
+.section-container {
+    width: clamp(320px, 70%, 1440px);
+}
+
+.crate {
+    border-radius: 10px;
+    padding: clamp(10px, 1.5vw, 20px);
+    background: var(--background-gradient);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.crate:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+h2 {
+    font-size: 4vw !important;
+}
+
+h4 {
+    font-size: 2vw !important;
+}
+
+h6 {
+    font-size: 1.4vw !important;
+}
+
+p {
+    font-size: 1.1vw !important;
+}
+
+.big-icons {
+    font-size: clamp(16px, 2vw, 30px);
+}
+
+.medium-icons {
+    font-size: clamp(15px, 1.5vw, 25px);
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-container {
+        width: 80%;
+    }
+    h2 {
+        font-size: 5vw !important;
+    }
+
+    h4 {
+        font-size: 2.2vw !important;
+    }
+    
+    h6 {
+        font-size: 1.6vw !important;
+    }
+    
+    p {
+        font-size: 1.4vw !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section-container {
+        width: 90%;
+    }
+    .crate:hover {
+        transform: translateY(-2px);
+    }
+    h2 {
+        font-size: clamp(30px, 5vw, 40px) !important;
+    }
+
+    h4 {
+        font-size: clamp(15px, 2.6vw, 40px) !important;
+    }
+    
+    h6 {
+        font-size: clamp(12px, 2.2vw, 40px) !important;
+    }
+    
+    p {
+        font-size: clamp(7px, 1.7vw, 20px) !important;
+    }
+}

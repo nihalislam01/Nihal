@@ -1,0 +1,138 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: clamp(10px, 1.5vw, 20px);
+    min-height: 100vh;
+}
+
+.about .row-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: clamp(10px, 1.5vw, 20px);
+}
+
+.about .row-one .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.about .row-one .about-me-motion {
+    width: 55%;
+    aspect-ratio: 2.75/1;
+}
+
+.about .row-one .media-motion {
+    width: 20%;
+    aspect-ratio: 1/1;
+}
+
+.about .row-one .media {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about .row-one .media:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.about .row-two {
+    display: flex;
+    align-items: end;
+    gap: clamp(10px, 1.5vw, 20px);
+}
+
+.about .row-two .skill-motion {
+    width: 70%;
+    aspect-ratio: 3.25/1.5;
+}
+
+.about .row-two .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.about .tools {
+    margin-bottom: clamp(10px, 1.5vw, 20px);
+}
+
+.about .row-two .col-one {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: clamp(10px, 1.5vw, 20px);
+}
+
+.about .row-two .col-one .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.about .row-two .col-one .col-one-row-one {
+    display: flex;
+    width: 100%;
+    gap: clamp(10px, 1.5vw, 20px);
+}
+
+.about .project-motion, .about .experience-motion {
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.about .about-project,  .about .about-experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    gap: clamp(10px, 1.5vw, 20px);
+}
+
+@media only screen and (max-width: 1024px) {
+    .about .project-motion,  .about .experience-motion{
+        display: none;
+    }
+    .about .row-two {
+        flex-direction: column;
+    }
+    .about .row-two .col-one {
+        width: 100%;
+        gap: 0px;
+    }
+    .about .row-one .about-me-motion {
+        width: 80%;
+        aspect-ratio: 4/1;
+    }
+    .about .row-two .skill-motion {
+        width: 100%;
+        aspect-ratio: 3.5/1;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about {
+        min-height: 70vh;
+    }
+    .about .row-one .about-me-motion {
+        width: 70%;
+        aspect-ratio: 2.3/1;
+    }
+    .about .row-one .media-motion {
+        width: 30%;
+    }
+}

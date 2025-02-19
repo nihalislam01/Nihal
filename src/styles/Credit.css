@@ -1,0 +1,17 @@
+.credit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 5vh;
+    border-top: 1px solid var(--secondary-main);
+}
+
+.credit p {
+    font-size: 12px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .credit p {
+        font-size: clamp(7px, 2vw, 12px) !important;
+    }
+}

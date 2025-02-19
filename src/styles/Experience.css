@@ -1,0 +1,60 @@
+.experience-and-education {
+    min-height: 50vh;
+}
+
+.experience-and-education .experience-container {
+    width: 100%;
+    display: flex;
+    padding: 20px 0px;
+}
+
+.experience-and-education .experience-title {
+    width: 25%;
+}
+
+.experience-and-education .experience-title p {
+    cursor: pointer;
+    padding: 10px 0px;
+}
+
+.experience-and-education .details {
+    width: 75%;
+    padding: clamp(10px, 1.5vw, 20px);
+    border-left: 1px solid var(--secondary-main);
+}
+.experience-and-education .details .achievements {
+    margin-top: 10px;
+}
+.experience-and-education .experience-icons {
+    margin-top: 0.2vw;
+}
+
+@media only screen and (max-width: 1024px) {
+    .experience-and-education {
+        min-height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .experience-and-education {
+        min-height: 30vh;
+    }
+    .experience-and-education .experience-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .experience-and-education .experience-title {
+        width: 100%;
+    }
+    .experience-and-education .experience-title p {
+        padding: 5px 0px;
+        border: none !important;
+        text-align: center;
+    }
+    .experience-and-education .details {
+        border-left: none;
+        border-top: 1px solid var(--secondary-main);
+        width: 100%;
+    }
+}
+
