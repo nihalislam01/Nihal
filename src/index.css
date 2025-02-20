@@ -62,6 +62,9 @@ h4 {
 h6 {
     font-size: 1.4vw !important;
 }
+h5 {
+    font-size: 1.3vw !important;
+}
 
 p {
     font-size: 1.1vw !important;
@@ -90,6 +93,9 @@ p {
     h6 {
         font-size: 1.6vw !important;
     }
+    h5 {
+        font-size: 1.5vw !important;
+    }
     
     p {
         font-size: 1.4vw !important;
@@ -113,6 +119,10 @@ p {
     
     h6 {
         font-size: clamp(12px, 2.2vw, 40px) !important;
+    }
+
+    h5 {
+        font-size: clamp(10px, 1.7vw, 20px) !important;
     }
     
     p {

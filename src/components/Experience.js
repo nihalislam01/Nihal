@@ -41,7 +41,7 @@ export default function Experience() {
                 <div className="experience-title">
                     {
                         experience.map(({ company }, index) => (
-                            <Typography fontWeight={`${selectedIndex === index ? "bold": ""}`} sx={{borderRight: index === selectedIndex ? "2px solid var(--secondary-main)" : ""}} key={index} onClick={() => setSelectedIndex(index)}>
+                            <Typography variant="h5" fontWeight={`${selectedIndex === index ? "bold": ""}`} sx={{borderRight: index === selectedIndex ? "2px solid var(--secondary-main)" : ""}} key={index} onClick={() => setSelectedIndex(index)}>
                                 {company}
                             </Typography>
                         ))
@@ -55,8 +55,8 @@ export default function Experience() {
                             experience[selectedIndex].achievements.map((achievement, index) => (
                                 <motion.div key={`${index}-${selectedIndex}`} variants={bottomFadeUp} initial="hidden" animate={isInView ? "visible" : "hidden"} custom={index*0.2}>
                                     <div className="d-flex gap-2 align-items-start">
-                                        <Typography><i className="fa-solid fa-caret-right experience-icons"></i></Typography>
-                                        <Typography key={index}>{achievement}</Typography>
+                                        <Typography variant="h5"><i className="fa-solid fa-caret-right experience-icons"></i></Typography>
+                                        <Typography variant="h5" key={index}>{achievement}</Typography>
                                     </div>
                                 </motion.div>
                             ))

@@ -35,4 +35,7 @@
     .carousel {
         height: 250px;
     }
+    .repo {
+        gap: 10px;
+    }
 }

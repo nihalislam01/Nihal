@@ -11,7 +11,7 @@ const repositories = [
     { name: "Cinemax", description: "Movie ticket purchasing system", link: "https://github.com/nihalislam01/Online-Movie-Ticket-Purchasing-System" },
     { name: "Azaan App", description: "Islamic Prayer time teller", link: "https://github.com/nihalislam01/AzaanApp" },
     { name: "LMS", description: "Library management system", link: "https://github.com/nihalislam01/Library-Management-System" },
-    { name: "Green Mentor", description: "Plan care assist application", link: "https://github.com/nihalislam01/GreenMentor" }
+    { name: "Green Mentor", description: "Plant care assist application", link: "https://github.com/nihalislam01/GreenMentor" }
 ];
 
 export default function Project() {
@@ -67,7 +67,7 @@ export default function Project() {
                                 }}>
                                 <Link className="crate repo"  href={repo.link} target="_blank" rel="noopener noreferrer">
                                     <i className="fa-regular fa-folder-open"></i>
-                                    <Typography variant="h6" fontWeight="bold">{repo.name}</Typography>
+                                    <Typography variant="h5" fontWeight="bold">{repo.name}</Typography>
                                     <i className="fa-solid fa-minus"></i>
                                     <Typography color="text.secondary">{repo.description}</Typography>
                                 </Link>
