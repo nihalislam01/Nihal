@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     gap: clamp(10px, 1.5vw, 20px);
-    min-height: 100vh;
+    padding: 50px 0px;
 }
 
 .about .row-one {

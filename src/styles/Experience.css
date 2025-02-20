@@ -1,5 +1,5 @@
 .experience-and-education {
-    min-height: 50vh;
+    padding: 50px 0px;
 }
 
 .experience-and-education .experience-container {
@@ -12,7 +12,7 @@
     width: 25%;
 }
 
-.experience-and-education .experience-title p {
+.experience-and-education .experience-title h5 {
     cursor: pointer;
     padding: 10px 0px;
 }
