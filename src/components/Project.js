@@ -5,13 +5,54 @@ import { Link, Typography } from "@mui/material";
 import Title from "./Title";
 
 const repositories = [
-    { name: "Hexis", description: "Blockchain-based fake product identification", link: "https://github.com/nihalislam01/Blockchain-Based-Fake-Product-Identification" },
-    { name: "Executive Insight", description: "Task & employee management system", link: "https://github.com/nihalislam01/ExecutiveInsight" },
-    { name: "BUOCA", description: "Brac University's office of co-curricular activities", link: "https://github.com/nihalislam01/BUOCA_IntraHacktive_T2" },
-    { name: "Cinemax", description: "Movie ticket purchasing system", link: "https://github.com/nihalislam01/Online-Movie-Ticket-Purchasing-System" },
-    { name: "Azaan App", description: "Islamic Prayer time teller", link: "https://github.com/nihalislam01/AzaanApp" },
-    { name: "LMS", description: "Library management system", link: "https://github.com/nihalislam01/Library-Management-System" },
-    { name: "Green Mentor", description: "Plant care assist application", link: "https://github.com/nihalislam01/GreenMentor" }
+    { 
+        name: "Hexis", 
+        description: "Blockchain-based fake product identification", 
+        link: "https://github.com/nihalislam01/Blockchain-Based-Fake-Product-Identification",
+        stack: "Node.js (Express.js) | React.js | MongoDB | Solidity"
+    },
+    { 
+        name: "Executive Insight", 
+        description: "Task & employee management system", 
+        link: "https://github.com/nihalislam01/ExecutiveInsight" ,
+        stack: "Spring Boot | React.js | MySQL"
+    },
+    { 
+        name: "BUOCA", 
+        description: "Brac University's office of co-curricular activities", 
+        link: "https://github.com/nihalislam01/BUOCA_IntraHacktive_T2" ,
+        stack: "MERN | WebSocket | Chart.js"
+    },
+    { 
+        name: "Cinemax", 
+        description: "Movie ticket purchasing system", 
+        link: "https://github.com/nihalislam01/Online-Movie-Ticket-Purchasing-System" ,
+        stack: "Node.js (Express.js) | React.js | MySQL"
+    },
+    { 
+        name: "Azaan App", 
+        description: "Islamic Prayer time teller", 
+        link: "https://github.com/nihalislam01/AzaanApp" ,
+        stack: "Swift | Al Adhan API"
+    },
+    { 
+        name: "LMS", 
+        description: "Library management system", 
+        link: "https://github.com/nihalislam01/Library-Management-System" ,
+        stack: "Node.js (Express.js) | React.js | MySQL"
+    },
+    { 
+        name: "Green Mentor", 
+        description: "Plant care assist application", 
+        link: "https://github.com/nihalislam01/GreenMentor" ,
+        stack: "Node.js (Express.js) | HTML/CSS | MySQL"
+    },
+    { 
+        name: "Service Lagbe", 
+        description: "Online services platform", 
+        link: "https://github.com/nihalislam01/ServiceLagbe" ,
+        stack: "Spring Boot | HTML/CSS | MySQL"
+    }
 ];
 
 export default function Project() {
@@ -55,7 +96,7 @@ export default function Project() {
                 <AnimatePresence>
                     {repositories.map((repo, index) => {
                         const offsetIndex = (index - currentIndex + repositories.length) % repositories.length;
-                        const rawIndex = (index===6 && currentIndex===0) ? -1 : (index - currentIndex);
+                        const rawIndex = (index===(repositories.length-1) && currentIndex===0) ? -1 : (index - currentIndex);
                         const distance = Math.abs(offsetIndex);
 
                         return (
@@ -66,10 +107,10 @@ export default function Project() {
                                     scale: distance === 0 ? 1 : (distance === 1 || rawIndex === -1) ? 0.85 : 0.7,
                                 }}>
                                 <Link className="crate repo"  href={repo.link} target="_blank" rel="noopener noreferrer">
-                                    <i className="fa-regular fa-folder-open"></i>
-                                    <Typography variant="h5" fontWeight="bold">{repo.name}</Typography>
+                                    <Typography variant="h6" fontWeight="bold"><i className="fa-regular fa-folder-open"></i> {repo.name}</Typography>
                                     <i className="fa-solid fa-minus"></i>
                                     <Typography color="text.secondary">{repo.description}</Typography>
+                                    <Typography className="stack" color="text.secondary">{repo.stack}</Typography>
                                 </Link>
                             </motion.div>
                         );

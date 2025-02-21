@@ -53,22 +53,19 @@ a {
 }
 
 h2 {
-    font-size: 4vw !important;
+    font-size: clamp(40px, 4vw, 70px) !important;
 }
 
 h4 {
-    font-size: 2vw !important;
+    font-size: clamp(20px, 2vw, 40px) !important;
 }
 
 h6 {
-    font-size: 1.4vw !important;
-}
-h5 {
-    font-size: clamp(10px, 1.3vw, 25px) !important;
+    font-size: clamp(10px, 1.3vw, 20px) !important;
 }
 
 p {
-    font-size: 1.1vw !important;
+    font-size: clamp(7px, 1.1vw, 18px) !important;
 }
 
 .big-icons {
@@ -94,16 +91,13 @@ p {
     h6 {
         font-size: 1.6vw !important;
     }
-    h5 {
-        font-size: 1.5vw !important;
-    }
     
     p {
         font-size: 1.4vw !important;
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .section-container {
         width: 90%;
     }
@@ -111,22 +105,18 @@ p {
         transform: translateY(-2px);
     }
     h2 {
-        font-size: clamp(30px, 5vw, 40px) !important;
+        font-size: clamp(30px, 6vw, 40px) !important;
     }
 
     h4 {
-        font-size: clamp(15px, 2.6vw, 40px) !important;
+        font-size: clamp(15px, 2.6vw, 30px) !important;
     }
     
     h6 {
-        font-size: clamp(12px, 2.2vw, 40px) !important;
-    }
-
-    h5 {
-        font-size: clamp(10px, 1.7vw, 20px) !important;
+        font-size: clamp(10px, 2.2vw, 20px) !important;
     }
     
     p {
-        font-size: clamp(7px, 1.7vw, 20px) !important;
+        font-size: clamp(7px, 2vw, 15px) !important;
     }
 }

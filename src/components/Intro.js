@@ -18,11 +18,11 @@ export default function Intro() {
                 </Box>
             </motion.div>
             <motion.div initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomFadeUp} custom={0.2}>
-                <Typography variant="h5" textAlign="center" color="text.secondary">Hi, I am Nihal. I am a final semester Computer Science student who enjoys playing with tools and technologies. I help solving real world problems by building technical Products. Feel free to leave a message!</Typography>
+                <Typography variant="h6" textAlign="center" color="text.secondary">Hi, I am Nihal. I am a final semester Computer Science student who enjoys playing with tools and technologies. I help solving real world problems by building technical Products. Feel free to leave a message!</Typography>
             </motion.div>
             <motion.div initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomFadeUp} custom={0.4}>
                 <Button href="mailto:nihalislam2@gmail.com" target="_blank" rel="noopener noreferrer" className="crate email">
-                    <Typography variant="h5"><i className="fa-regular fa-envelope"></i> Let's Connect</Typography>
+                    <Typography variant="h6"><i className="fa-regular fa-envelope"></i> Let's Connect</Typography>
                 </Button>
             </motion.div>
         </Box>

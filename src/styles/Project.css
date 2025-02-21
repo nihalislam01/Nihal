@@ -31,9 +31,12 @@
         padding-top: 100px;
     }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .project {
         padding: 20px 0px;
+    }
+    .stack {
+        display: none;
     }
 }
 @media only screen and (max-width: 425px) {
