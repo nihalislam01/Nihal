@@ -56,7 +56,7 @@ export default function About() {
                         
                         <div className="d-flex justify-content-between align-items-center">
                             <div>
-                                <Typography color="text.secondary">Computer Science Student <i className="fa-solid fa-at"></i> Brac University</Typography>
+                                <Typography color="text.secondary">Computer Science Student <a href="https://www.bracu.ac.bd" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-at"></i> Brac University</a></Typography>
                                 <Typography variant="h6" fontWeight="bold">About Me</Typography>
                             </div>
                             <i className="fa-regular fa-circle-user big-icons"></i>

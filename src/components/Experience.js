@@ -10,15 +10,18 @@ const experience = [
         company: "Urban Layout BD", 
         position: "Software Developer", 
         duration: "Oct 2024 - Present", 
+        website: "https://www.urbanlayoutbd.com",
         achievements: [
             "Designed and implemented a CRM dashboard to automate project and customer relationship management, enhancing workflow efficiency by 35%.",
             "Developed an SEO-optimized WordPress website for the company, improving user experience and search visibility.",
             "Created a dynamic portfolio for the company manager using React.js, enhancing presentation and accessibility."
         ],
     },
-    { company: "Brac University", 
+    { 
+        company: "Brac University", 
         position: "Computer Science Student", 
         duration: "Expected May 2025", 
+        website: "https://www.bracu.ac.bd",
         achievements: [
             "Scholarships: Achieved Merit Based Scholarship for maintaining required CGPA",
             "Participations: Bracu Programming Contest 2022, Bracu IntraHacktive Hackathon 2024",
@@ -48,7 +51,7 @@ export default function Experience() {
                     }
                 </div>
                 <div ref={ref} className="details">
-                    <Typography variant="h6" fontWeight="bold">{experience[selectedIndex].position} <i className="fa-solid fa-at"></i> {experience[selectedIndex].company}</Typography>
+                    <Typography variant="h6" fontWeight="bold">{experience[selectedIndex].position} <a href={experience[selectedIndex].website} target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-at"></i> {experience[selectedIndex].company}</a></Typography>
                     <Typography color="text.secondary" fontWeight="bold">{experience[selectedIndex].duration}</Typography>
                     <div className="achievements">
                         {
