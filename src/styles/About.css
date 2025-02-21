@@ -126,7 +126,7 @@
 
 @media only screen and (max-width: 767px) {
     .about {
-        min-height: 70vh;
+        padding: 20px 0px;
     }
     .about .row-one .about-me-motion {
         width: 70%;

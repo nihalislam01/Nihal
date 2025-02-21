@@ -30,7 +30,8 @@ code {
 }
 
 .section-container {
-    width: clamp(320px, 70%, 1440px);
+    max-width: 1000px;
+    width: 70%;
 }
 
 .crate {

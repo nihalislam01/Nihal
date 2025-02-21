@@ -29,15 +29,9 @@
     margin-top: 0.2vw;
 }
 
-@media only screen and (max-width: 1024px) {
-    .experience-and-education {
-        min-height: 40vh;
-    }
-}
-
 @media only screen and (max-width: 767px) {
     .experience-and-education {
-        min-height: 30vh;
+        padding: 20px 0px;
     }
     .experience-and-education .experience-container {
         display: flex;

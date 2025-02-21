@@ -22,7 +22,7 @@ export default function Intro() {
             </motion.div>
             <motion.div initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomFadeUp} custom={0.4}>
                 <Button href="mailto:nihalislam2@gmail.com" target="_blank" rel="noopener noreferrer" className="crate email">
-                    <Typography><i className="fa-regular fa-envelope"></i> Let's Connect</Typography>
+                    <Typography variant="h5"><i className="fa-regular fa-envelope"></i> Let's Connect</Typography>
                 </Button>
             </motion.div>
         </Box>
