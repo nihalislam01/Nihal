@@ -13,7 +13,7 @@ const experience = [
         website: "https://www.urbanlayoutbd.com",
         achievements: [
             "Designed and implemented a CRM dashboard to automate project and customer relationship management, enhancing workflow efficiency by 35%.",
-            "Developed an SEO-optimized WordPress website for the company, improving user experience and search visibility.",
+            "Developed a SEO-optimized WordPress website for the company, improving user experience and search visibility.",
             "Created a dynamic portfolio for the company manager using React.js, enhancing presentation and accessibility."
         ],
     },
