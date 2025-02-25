@@ -1,4 +1,5 @@
 import { Typography } from "@mui/material";
+
 import "../styles/Credit.css";
 
 export default function Credit() {

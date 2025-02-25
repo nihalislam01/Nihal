@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "../styles/Project.css";
 import { Link, Typography } from "@mui/material";
+
 import Title from "./Title";
+
+import "../styles/Project.css";
 
 const repositories = [
     { 
@@ -90,7 +92,7 @@ export default function Project() {
     }, []);
 
     return (
-        <div id="project" className="section-container project">
+        <section id="project" className="section-container project">
             <Title title="Projects" />
             <div className="carousel" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >
                 <AnimatePresence>
@@ -117,6 +119,6 @@ export default function Project() {
                     })}
                 </AnimatePresence>
             </div>
-        </div>
+        </section>
     );
 }

@@ -1,9 +1,11 @@
 import { Typography } from "@mui/material";
 import { useRef, useState } from "react";
-import "../styles/Experience.css";
-import Title from "./Title";
 import { motion, useInView } from "framer-motion";
 import { bottomFadeUp } from "../utils/Animation";
+
+import Title from "./Title";
+
+import "../styles/Experience.css";
 
 const experience = [
     { 
@@ -38,7 +40,7 @@ export default function Experience() {
     const isInView = useInView(ref, {once: true, margin: "-50px"});
 
     return (
-        <div id="experience" className="section-container experience-and-education">
+        <section id="experience" className="section-container experience-and-education">
             <Title title="Education &#38; Experience" />
             <div className="experience-container">
                 <div className="experience-title">
@@ -50,23 +52,21 @@ export default function Experience() {
                         ))
                     }
                 </div>
-                <div ref={ref} className="details">
+                <article ref={ref} className="details">
                     <Typography variant="h6" fontWeight="bold">{experience[selectedIndex].position} <a href={experience[selectedIndex].website} target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-at"></i> {experience[selectedIndex].company}</a></Typography>
                     <Typography color="text.secondary" fontWeight="bold">{experience[selectedIndex].duration}</Typography>
                     <div className="achievements">
                         {
                             experience[selectedIndex].achievements.map((achievement, index) => (
-                                <motion.div key={`${index}-${selectedIndex}`} variants={bottomFadeUp} initial="hidden" animate={isInView ? "visible" : "hidden"} custom={index*0.2}>
-                                    <div className="d-flex gap-2 align-items-start">
-                                        <Typography variant="h6"><i className="fa-solid fa-caret-right experience-icons"></i></Typography>
-                                        <Typography variant="h6" key={index}>{achievement}</Typography>
-                                    </div>
-                                </motion.div>
+                                <motion.article className="d-flex gap-2 align-items-start" key={`${index}-${selectedIndex}`} variants={bottomFadeUp} initial="hidden" animate={isInView ? "visible" : "hidden"} custom={index*0.2}>
+                                    <Typography variant="h6"><i className="fa-solid fa-caret-right experience-icons"></i></Typography>
+                                    <Typography variant="h6" key={index}>{achievement}</Typography>
+                                </motion.article>
                             ))
                         }
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     )
 }

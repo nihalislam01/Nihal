@@ -1,6 +1,7 @@
 import { Box, Link, Tooltip, Typography } from "@mui/material";
-import "../styles/Navbar.css";
 import { useTheme } from "../utils/ThemeProvider";
+
+import "../styles/Navbar.css";
 
 const sections = [
     {

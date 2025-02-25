@@ -1,8 +1,9 @@
 import { CardMedia, Tooltip, Typography } from "@mui/material";
-import "../styles/About.css";
 import { motion, useInView } from "framer-motion";
 import { bottomSpringUp } from "../utils/Animation";
 import { useEffect, useRef, useState } from "react";
+
+import "../styles/About.css";
 
 const tools = ["Python", "Java", "C++", "Javascript ES6+", "Solidity", "React.js", "Spring Boot", "SQL"]
 const contact = [
@@ -17,7 +18,7 @@ const contact = [
         link: "https://discord.com/users/bing9235"
     },
     {
-        title: "YouTube Profile",
+        title: "YouTube Channel",
         icon: "fa-brands fa-youtube",
         link: "https://www.youtube.com/@nihalislam7928"
     },
@@ -48,17 +49,17 @@ export default function About() {
 
 
     return (
-        <div ref={ref} id="about" className="section-container about">
+        <section ref={ref} id="about" className="section-container about">
             <div className="row-one">
                 <motion.div className="about-me-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp}>
                     <div className="crate about-me">
                         <Typography>I am currently studying Computer Science at Brac University. I am highly fascinated by full-stack development, cryptography and blockchain. On my spare time I watch a lot of YouTube videos. </Typography>
                         
                         <div className="d-flex justify-content-between align-items-center">
-                            <div>
+                            <article>
                                 <Typography color="text.secondary">Computer Science Student <a href="https://www.bracu.ac.bd" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-at"></i> Brac University</a></Typography>
                                 <Typography variant="h6" fontWeight="bold">About Me</Typography>
-                            </div>
+                            </article>
                             <i className="fa-regular fa-circle-user big-icons"></i>
                         </div>
                     </div>
@@ -71,26 +72,26 @@ export default function About() {
                 <motion.div className="skill-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp} custom={0.4}>
                 <div className="crate skill">
                     <div className="d-flex">
-                        <div className="w-100">
+                        <article className="w-100">
                             {
                                 tools.slice(0, 4).map((tool, index) => (
                                     <Typography key={index} className="tools"><i className="fa-solid fa-caret-right"></i> {tool}</Typography>
                                 ))
                             }
-                        </div>
-                        <div className="w-100">
+                        </article>
+                        <article className="w-100">
                             {
                                 tools.slice(4).map((tool, index) => (
                                     <Typography key={index} className="tools"><i className="fa-solid fa-caret-right"></i> {tool}</Typography>
                                 ))
                             }
-                        </div>
+                        </article>
                     </div>
                     <div className="d-flex justify-content-between align-items-center">
-                        <div>
+                        <article>
                             <Typography color="text.secondary">Some of the technologies I have been working with</Typography>
                             <Typography  variant="h6" fontWeight="bold">Tools &#38; Technologies</Typography>
-                        </div>
+                        </article>
                         <i className="fa-solid fa-gear big-icons"></i>
                     </div>
                 </div>
@@ -129,6 +130,6 @@ export default function About() {
                     </motion.div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
