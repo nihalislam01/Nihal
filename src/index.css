@@ -61,7 +61,7 @@ h4 {
 }
 
 h6 {
-    font-size: clamp(10px, 1.3vw, 20px) !important;
+    font-size: clamp(10px, 1.1vw, 18px) !important;
 }
 
 p {
