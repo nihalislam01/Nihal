@@ -11,7 +11,19 @@ const repositories = [
         name: "Hexis", 
         description: "Blockchain-based fake product identification", 
         link: "https://github.com/nihalislam01/Blockchain-Based-Fake-Product-Identification",
-        stack: "Node.js (Express.js) | React.js | MongoDB | Solidity"
+        stack: "Node.js (Express.js) | React.js | MongoDB | Solidity | DLT"
+    },
+    { 
+        name: "CEHR", 
+        description: "Cryptographic Electronic Health Record System", 
+        link: "https://github.com/nihalislam01/Cryptographic-EHR-System",
+        stack: "Flask | React.js | MySQL | AES | RSA"
+    },
+    { 
+        name: "DID", 
+        description: "Decentralized Identity System", 
+        link: "https://github.com/nihalislam01/Decentralized-Identity-System",
+        stack: "Node.js (Express.js) | Solidity | DLT"
     },
     { 
         name: "Executive Insight", 
@@ -26,35 +38,11 @@ const repositories = [
         stack: "MERN | WebSocket | Chart.js"
     },
     { 
-        name: "Cinemax", 
-        description: "Movie ticket purchasing system", 
-        link: "https://github.com/nihalislam01/Online-Movie-Ticket-Purchasing-System" ,
-        stack: "Node.js (Express.js) | React.js | MySQL"
-    },
-    { 
         name: "Azaan App", 
         description: "Islamic Prayer time teller", 
         link: "https://github.com/nihalislam01/AzaanApp" ,
         stack: "Swift | Al Adhan API"
     },
-    { 
-        name: "LMS", 
-        description: "Library management system", 
-        link: "https://github.com/nihalislam01/Library-Management-System" ,
-        stack: "Node.js (Express.js) | React.js | MySQL"
-    },
-    { 
-        name: "Green Mentor", 
-        description: "Plant care assist application", 
-        link: "https://github.com/nihalislam01/GreenMentor" ,
-        stack: "Node.js (Express.js) | HTML/CSS | MySQL"
-    },
-    { 
-        name: "Service Lagbe", 
-        description: "Online services platform", 
-        link: "https://github.com/nihalislam01/ServiceLagbe" ,
-        stack: "Spring Boot | HTML/CSS | MySQL"
-    }
 ];
 
 export default function Project() {
