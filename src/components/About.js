@@ -4,8 +4,16 @@ import { bottomSpringUp } from "../utils/Animation";
 import { useEffect, useRef, useState } from "react";
 
 import "../styles/About.css";
-
-const tools = ["Python", "Java", "C++", "Javascript ES6+", "Solidity", "React.js", "Spring Boot", "SQL"]
+const tools = [
+    { name: "Python", logo: "fa-brands fa-python" },
+    { name: "Java", logo: "fa-brands fa-java" },
+    { name: "Swift", logo: "fa-brands fa-swift" },
+    { name: "Javascript ES6+", logo: "fa-brands fa-js" },
+    { name: "Solidity", logo: "fa-brands fa-ethereum" },
+    { name: "React.js", logo: "fa-brands fa-react" },
+    { name: "Spring Boot", logo: "fa-solid fa-leaf" },
+    { name: "SQL", logo: "fa-solid fa-database" }
+];
 const contact = [
     {
         title: "Dev Community Profile",
@@ -75,14 +83,14 @@ export default function About() {
                         <article className="w-100">
                             {
                                 tools.slice(0, 4).map((tool, index) => (
-                                    <Typography key={index} className="tools"><i className="fa-solid fa-caret-right"></i> {tool}</Typography>
+                                    <Typography key={index} className="tools"><i className={tool.logo}></i> {tool.name}</Typography>
                                 ))
                             }
                         </article>
                         <article className="w-100">
                             {
                                 tools.slice(4).map((tool, index) => (
-                                    <Typography key={index} className="tools"><i className="fa-solid fa-caret-right"></i> {tool}</Typography>
+                                    <Typography key={index} className="tools"><i className={tool.logo}></i> {tool.name}</Typography>
                                 ))
                             }
                         </article>
