@@ -28,9 +28,9 @@
     background-color: #adb5bd;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
     .navigation .sections {
-        display: none;;
+        display: none;
     } 
 }
   

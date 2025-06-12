@@ -19,15 +19,33 @@
     gap: clamp(10px, 1.5vw, 20px);
 }
 
-.intro .icon {
+.intro .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
-    padding: 17px 20px;
+}
+@media only screen and (max-width: 768px) {
+    .quote {
+        text-align: center !important;
+        font-size: clamp(10px, 3vw, 20px) !important;
+    }
+    .intro .icon-container {
+        height: 50px;
+        width: 50px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .intro {
+        gap: 30px;
+    }
 }
 
-@media only screen and (max-width: 768px) {
-    .intro .icon {
-        border-radius: 50%;
-        padding: 8px 13px;
+@media only screen and (max-width: 375px) {
+    .quote {
+        font-size: 9px !important;
     }
 }
 

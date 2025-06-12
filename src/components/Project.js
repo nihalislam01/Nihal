@@ -11,37 +11,43 @@ const repositories = [
         name: "Hexis", 
         description: "Blockchain-based fake product identification", 
         link: "https://github.com/nihalislam01/Blockchain-Based-Fake-Product-Identification",
-        stack: "Node.js (Express.js) | React.js | MongoDB | Solidity | DLT"
+        stack: "MERN | Solidity | DLT",
+        short: "Fake product identification"
     },
     { 
         name: "CEHR", 
         description: "Cryptographic Electronic Health Record System", 
         link: "https://github.com/nihalislam01/Cryptographic-EHR-System",
-        stack: "Flask | React.js | MySQL | AES | RSA"
+        stack: "Flask | React.js | MySQL | AES | RSA",
+        short: "Cryptographic EHR System"
     },
     { 
         name: "DID", 
         description: "Decentralized Identity System", 
         link: "https://github.com/nihalislam01/Decentralized-Identity-System",
-        stack: "Node.js (Express.js) | Solidity | DLT"
+        stack: "Node.js (Express.js) | Solidity | DLT",
+        short: "Decentralized Identity System"
     },
     { 
         name: "Executive Insight", 
         description: "Task & employee management system", 
         link: "https://github.com/nihalislam01/ExecutiveInsight" ,
-        stack: "Spring Boot | React.js | MySQL"
+        stack: "Spring Boot | React.js | MySQL",
+        short: "Task management system"
     },
     { 
         name: "BUOCA", 
         description: "Brac University's office of co-curricular activities", 
         link: "https://github.com/nihalislam01/BUOCA_IntraHacktive_T2" ,
-        stack: "MERN | WebSocket | Chart.js"
+        stack: "MERN | WebSocket | Chart.js",
+        short: "Office of co-curricular activities"
     },
     { 
         name: "Azaan App", 
         description: "Islamic Prayer time teller", 
         link: "https://github.com/nihalislam01/AzaanApp" ,
-        stack: "Swift | Al Adhan API"
+        stack: "Swift | Al Adhan API",
+        short: "Islamic Prayer time teller"
     },
 ];
 
@@ -97,9 +103,11 @@ export default function Project() {
                                     scale: distance === 0 ? 1 : (distance === 1 || rawIndex === -1) ? 0.85 : 0.7,
                                 }}>
                                 <Link className="crate repo"  href={repo.link} target="_blank" rel="noopener noreferrer">
-                                    <Typography variant="h6" fontWeight="bold"><i className="fa-regular fa-folder-open"></i> {repo.name}</Typography>
-                                    <i className="fa-solid fa-minus"></i>
-                                    <Typography color="text.secondary">{repo.description}</Typography>
+                                    <i className="fa-regular fa-folder-open"></i>
+                                    <Typography className="repo-name" variant="h6" fontWeight="bold">{repo.name}</Typography>
+                                    <span className="minus-icon"><i className="fa-solid fa-minus"></i></span>
+                                    <Typography className="desc" color="text.secondary">{repo.description}</Typography>
+                                    <Typography className="short-desc" color="text.secondary">{repo.short}</Typography>
                                     <Typography className="stack" color="text.secondary">{repo.stack}</Typography>
                                 </Link>
                             </motion.div>

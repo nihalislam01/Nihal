@@ -11,7 +11,7 @@ const experience = [
     { 
         company: "Urban Layout BD", 
         position: "Software Developer", 
-        duration: "Oct 2024 - Present", 
+        duration: "Oct 2024 - May 2025", 
         website: "https://www.urbanlayoutbd.com",
         achievements: [
             "Designed and implemented a CRM dashboard to automate project and customer relationship management, enhancing workflow efficiency by 35%.",
@@ -22,7 +22,7 @@ const experience = [
     { 
         company: "Brac University", 
         position: "Computer Science Student", 
-        duration: "Expected May 2025", 
+        duration: "June 2021 - May 2025", 
         website: "https://www.bracu.ac.bd",
         achievements: [
             "Scholarships: Achieved Merit Based Scholarship for maintaining required CGPA",

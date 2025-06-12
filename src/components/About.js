@@ -61,11 +61,11 @@ export default function About() {
             <div className="row-one">
                 <motion.div className="about-me-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp}>
                     <div className="crate about-me">
-                        <Typography>I am currently studying Computer Science at Brac University. I am highly fascinated by full-stack development, cryptography and blockchain. On my spare time I watch a lot of YouTube videos. </Typography>
+                        <Typography>I am a Software Engineer Intern. I am highly fascinated by devops engineering, cryptography and blockchain. On my spare time I play games and watch a lot of YouTube videos. </Typography>
                         
                         <div className="d-flex justify-content-between align-items-center">
                             <article>
-                                <Typography color="text.secondary">Computer Science Student <a href="https://www.bracu.ac.bd" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-at"></i> Brac University</a></Typography>
+                                <Typography className="crate-title" color="text.secondary">Software Engineer Intern <a href="https://hubxpert.com" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-at"></i> Hubxpert</a></Typography>
                                 <Typography variant="h6" fontWeight="bold">About Me</Typography>
                             </article>
                             <i className="fa-regular fa-circle-user big-icons"></i>
@@ -97,7 +97,7 @@ export default function About() {
                     </div>
                     <div className="d-flex justify-content-between align-items-center">
                         <article>
-                            <Typography color="text.secondary">Some of the technologies I have been working with</Typography>
+                            <Typography className="crate-title" color="text.secondary">Some of the technologies I have been working with</Typography>
                             <Typography  variant="h6" fontWeight="bold">Tools &#38; Technologies</Typography>
                         </article>
                         <i className="fa-solid fa-gear big-icons"></i>
@@ -109,23 +109,17 @@ export default function About() {
                         <motion.div className="experience-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp} custom={0.6}>
                             <a href="#experience"><div className="crate about-experience">
                                 <i className="fa-solid fa-briefcase big-icons text-center"></i>
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <Typography fontWeight="bold">Experience</Typography>
-                                    <i className="fa-regular fa-circle-right"></i>
-                                </div>
+                                <Typography fontWeight="bold">Experience</Typography>
                             </div></a>
                         </motion.div>
                         <motion.div className="project-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp} custom={0.8}>
                         <a href="#project"><div className="crate about-project">
                                 <i className="fa-solid fa-desktop big-icons text-center"></i>
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <Typography fontWeight="bold">Projects</Typography>
-                                    <i className="fa-regular fa-circle-right"></i>
-                                </div>
+                                <Typography fontWeight="bold">Projects</Typography>
                             </div></a>
                         </motion.div>
                     </div>
-                    <motion.div initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp} custom={customValue}>
+                    <motion.div className="contact-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp} custom={customValue}>
                         <div className="crate contact">
                             {
                                 contact.map((contact, index) => (
