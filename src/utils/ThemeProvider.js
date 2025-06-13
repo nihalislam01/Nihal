@@ -27,7 +27,12 @@ const darkTheme = createTheme({
 
 export function ThemeProvider({ children }) {
   const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      return savedTheme === "dark";
+    }
+    return window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
 
   const theme = darkMode ? darkTheme : lightTheme;

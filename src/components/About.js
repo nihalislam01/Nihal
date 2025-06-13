@@ -61,7 +61,7 @@ export default function About() {
             <div className="row-one">
                 <motion.div className="about-me-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp}>
                     <div className="crate about-me">
-                        <Typography>I am a Software Engineer Intern. I am highly fascinated by devops engineering, cryptography and blockchain. On my spare time I play games and watch a lot of YouTube videos. </Typography>
+                        <Typography>I am a Software Engineer Intern. I am highly fascinated by devops engineering, cryptography and blockchain. On my spare time I play video games and watch a lot of YouTube videos. </Typography>
                         
                         <div className="d-flex justify-content-between align-items-center">
                             <article>
