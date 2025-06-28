@@ -35,7 +35,7 @@ export default function Intro() {
                 <Typography variant="h6" className="quote">Computer Science | Python/Java | MERN | Blockchain</Typography>
             </motion.article>
             <motion.article initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomFadeUp} custom={0.2}>
-                <Typography variant="h6" textAlign="center" color="text.secondary">Hi, my name is Nihal. I am a Software Engineer who enjoys playing with tools and technologies. I help solving large-scale, real-world problems by building technical products. Let's connect!</Typography>
+                <Typography variant="h6" textAlign="center" color="text.secondary">Hi, my name is Nihal. I am a Software Engineer who enjoys playing with tools and technologies. I help solving real-world problems by building technical products. Let's connect!</Typography>
             </motion.article>
             <div className="icons">
                 {

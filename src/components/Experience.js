@@ -9,8 +9,18 @@ import "../styles/Experience.css";
 
 const experience = [
     { 
+        company: "Hubxpert", 
+        position: "Software Engineer Intern", 
+        duration: "June 2025 - Present", 
+        website: "https://www.hubxpert.com",
+        achievements: [
+            "Integrated HubSpot APIs to automate CRM workflows, synchronize customer data, and reduce manual tasks.",
+            "Analyzed client needs during the discovery phase to plan and recommend efficient system architectures and data integration.",
+        ],
+    },
+    { 
         company: "Urban Layout BD", 
-        position: "Software Developer", 
+        position: "Software Support", 
         duration: "Oct 2024 - May 2025", 
         website: "https://www.urbanlayoutbd.com",
         achievements: [
