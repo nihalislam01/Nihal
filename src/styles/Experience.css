@@ -19,7 +19,7 @@
 
 .experience-and-education .details {
     width: 75%;
-    padding: clamp(10px, 1.5vw, 20px);
+    padding: 20px;
     border-left: 1px solid var(--secondary-main);
 }
 .experience-and-education .details .achievements {

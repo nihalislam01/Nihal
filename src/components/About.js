@@ -1,7 +1,7 @@
 import { CardMedia, Tooltip, Typography } from "@mui/material";
 import { motion, useInView } from "framer-motion";
 import { bottomSpringUp } from "../utils/Animation";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
 import "../styles/About.css";
 const tools = [
@@ -41,25 +41,11 @@ export default function About() {
 
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true, margin: "-50px"});
-    const [customValue, setCustomValue] = useState(1.0);
-  
-    useEffect(() => {
-      const updateCustom = () => {
-        const width = window.innerWidth;
-        if (width < 1024) setCustomValue(0.6);
-      };
-  
-      updateCustom();
-      window.addEventListener("resize", updateCustom);
-      
-      return () => window.removeEventListener("resize", updateCustom);
-    }, []);
-
 
     return (
         <section ref={ref} id="about" className="section-container about">
             <div className="row-one">
-                <motion.div className="about-me-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp}>
+                <motion.div className="about-me-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp} custom={0.2}>
                     <div className="crate about-me">
                         <Typography>I am a Software Engineer Intern at Hubxpert. I am highly fascinated by DevOps engineering, cryptography and blockchain. On my spare time I play video games and watch a lot of YouTube videos. </Typography>
                         
@@ -72,7 +58,7 @@ export default function About() {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div className="media-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp} custom={0.2}>
+                <motion.div className="media-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp}>
                     <CardMedia component="img" image="assets/me.jpeg" alt="Profile" className="media" />
                 </motion.div>
             </div>
@@ -113,13 +99,13 @@ export default function About() {
                             </div></a>
                         </motion.div>
                         <motion.div className="project-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp} custom={0.8}>
-                        <a href="#project"><div className="crate about-project">
+                            <a href="#project"><div className="crate about-project">
                                 <i className="fa-solid fa-desktop big-icons text-center"></i>
                                 <Typography fontWeight="bold">Projects</Typography>
                             </div></a>
                         </motion.div>
                     </div>
-                    <motion.div className="contact-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp} custom={customValue}>
+                    <motion.div className="contact-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp} custom={1.0}>
                         <div className="crate contact">
                             {
                                 contact.map((contact, index) => (

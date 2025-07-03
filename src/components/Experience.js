@@ -20,7 +20,7 @@ const experience = [
     },
     { 
         company: "Urban Layout BD", 
-        position: "Software Support", 
+        position: "Software Support Engineer", 
         duration: "Oct 2024 - May 2025", 
         website: "https://www.urbanlayoutbd.com",
         achievements: [

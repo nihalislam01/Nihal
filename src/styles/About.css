@@ -81,7 +81,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
 }
 
 .about .row-two .col-one .col-one-row-one {
@@ -120,9 +120,6 @@
     }
     .about .about-project,  .about .about-experience, .about .row-one .about-me-motion .about-me, .about .row-two .skill-motion .skill{
         gap: 10px;
-    }
-    .about .go-to-icon {
-        display: none;
     }
 }
 
