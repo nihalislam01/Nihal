@@ -47,11 +47,11 @@ export default function About() {
             <div className="row-one">
                 <motion.div className="about-me-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomSpringUp} custom={0.2}>
                     <div className="crate about-me">
-                        <Typography>I am a Software Engineer Intern at Hubxpert. I am highly fascinated by DevOps engineering, cryptography and blockchain. On my spare time I play video games and watch a lot of YouTube videos. </Typography>
+                        <Typography>I am a Software Engineer at Hubxpert. I am highly fascinated by DevOps engineering, cryptography and blockchain. On my spare time I play video games and watch a lot of YouTube videos. </Typography>
                         
                         <div className="d-flex justify-content-between align-items-center">
                             <article>
-                                <Typography className="crate-title" color="text.secondary">Software Engineer Intern <a href="https://hubxpert.com" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-at"></i> Hubxpert</a></Typography>
+                                <Typography className="crate-title" color="text.secondary">Software Engineer I <a href="https://hubxpert.com" target="_blank" rel="noopener noreferrer"><i className="fa-solid fa-at"></i> Hubxpert</a></Typography>
                                 <Typography variant="h6" fontWeight="bold">About Me</Typography>
                             </article>
                             <i className="fa-regular fa-circle-user big-icons"></i>

@@ -10,12 +10,13 @@ import "../styles/Experience.css";
 const experience = [
     { 
         company: "Hubxpert", 
-        position: "Software Engineer Intern", 
-        duration: "June 2025 - Present", 
+        position: "Software Engineer I", 
+        duration: "Jun 2025 - Present", 
         website: "https://www.hubxpert.com",
         achievements: [
-            "Integrated HubSpot APIs to automate CRM workflows, synchronize customer data, and reduce manual tasks.",
-            "Analyzed client needs during the discovery phase to plan and recommend efficient system architectures and data integration.",
+            " Monitored user data across internal systems and HubSpot CRM, synchronizing cross-platform data such as Monday, Nextech to HubSpot.",
+            "Designed HubSpot workflows to automate business processes that maintain and optimize CRM operations for the sales representatives.",
+            "Implemented Odoo ERP on Google Cloud Platform (GCP), deploying with NGINX, along with customization and module development.",
         ],
     },
     { 
@@ -32,12 +33,12 @@ const experience = [
     { 
         company: "Brac University", 
         position: "Computer Science Student", 
-        duration: "June 2021 - May 2025", 
+        duration: "Jun 2021 - May 2025", 
         website: "https://www.bracu.ac.bd",
         achievements: [
             "Scholarships: Achieved Merit Based Scholarship for maintaining required CGPA",
-            "Participations: Bracu Programming Contest 2022, Bracu IntraHacktive Hackathon 2024",
-            "Coursework: Achieved Exceptional results in academic courses including Algorithms, OOP, Image Processing"
+            "Coursework: Achieved Exceptional results in academic courses including Algorithms, OOP, Image Processing",
+            "Research: A Decentralized Framework for Government Issued NID using Self Sovereign Identity",
         ],
     },
 ]

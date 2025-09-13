@@ -10,7 +10,8 @@ const lightTheme = createTheme({
     primary: {main: "#495057"},
     secondary: {main: "#adb5bd"},
     background: { default: "#f5f5f5", paper: "#ffffff", gradient: "linear-gradient(to right, #f8f9fa, #e9ecef)" },
-    text: { primary: "#495057", secondary: "#6c757d" }
+    text: { primary: "#495057", secondary: "#6c757d" },
+    nameGradient: "linear-gradient(140deg, #495057, #495057, #adb5bd)",
   },
 });
 
@@ -20,7 +21,8 @@ const darkTheme = createTheme({
     primary: {main: "#e9ecef"},
     secondary: {main: "#ced4da"},
     background: { default: "#212529", paper: "#495057", gradient: "linear-gradient(to right,#495057, #343a40)" },
-    text: { primary: "#e9ecef", secondary: "#f8f9fa" }
+    text: { primary: "#e9ecef", secondary: "#f8f9fa" },
+    nameGradient: "linear-gradient(140deg, #f8f9fa, #f8f9fa, #495057)",
   },
 });
 

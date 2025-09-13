@@ -31,7 +31,7 @@ export default function Intro() {
     return (
         <section ref={ref} className="section-container intro">
             <motion.article className="header-box" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomFadeUp}>
-                <Typography variant="h2" fontWeight="bold">Nihal Islam</Typography>
+                <Typography variant="h2" fontWeight="bold" sx={(theme) => ({background: theme.palette.nameGradient, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",})}>Nihal Islam</Typography>
                 <Typography variant="h6" className="quote">Computer Science | Python/Java | MERN | Blockchain</Typography>
             </motion.article>
             <motion.article initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomFadeUp} custom={0.2}>
