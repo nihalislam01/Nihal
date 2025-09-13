@@ -7,7 +7,7 @@ import "../styles/About.css";
 const tools = [
     { name: "Python", logo: "fa-brands fa-python" },
     { name: "Java", logo: "fa-brands fa-java" },
-    { name: "Swift", logo: "fa-brands fa-swift" },
+    { name: "HubSpot", logo: "fa-brands fa-hubspot" },
     { name: "Javascript ES6+", logo: "fa-brands fa-js" },
     { name: "Solidity", logo: "fa-brands fa-ethereum" },
     { name: "React.js", logo: "fa-brands fa-react" },
