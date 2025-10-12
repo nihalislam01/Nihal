@@ -20,6 +20,10 @@ const sections = [
         title: "Project",
         link: "#project"
     },
+    {
+        title: "Feature",
+        link: "#feature"
+    },
 ]
 
 export default function Navbar() {

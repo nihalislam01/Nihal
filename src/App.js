@@ -6,6 +6,7 @@ import About from './components/About';
 import Credit from './components/Credit';
 import Experience from './components/Experience';
 import Project from './components/Project';
+import Feature from './components/Feature';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Experience />
       <Project />
+      <Feature />
       <Credit />
     </Box>
   );

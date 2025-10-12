@@ -1,0 +1,112 @@
+.feature {
+    margin-bottom: 100px;
+    padding-top: 50px;
+}
+
+.feature-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    position: relative;
+    background-color: #000;
+}
+
+.feature-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%; /* adjust shade height */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    border-radius: 0 0 12px 12px;
+  }
+
+.feature-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+.carousel-item {
+    height: 550px;
+}
+
+.feature-carousel {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .feature {
+        padding-top: 20px;
+    }
+    .carousel-item {
+        height: 400px;
+    }
+    .feat-title {
+        font-size: 20px !important;
+    }
+    .feat-desc {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .feature {
+        margin-bottom: 80px;
+    }
+    .carousel-item {
+        height: 350px;
+    }
+    .feat-title {
+        font-size: 14px !important;
+    }
+    .feat-desc {
+        font-size: 12px !important;
+        margin-bottom: 0px;
+    }
+    .feature-carousel .carousel-control-prev-icon,
+    .feature-carousel .carousel-control-next-icon {
+      width: 24px;
+      height: 24px;
+    }
+    .feature-carousel .carousel-indicators [data-bs-target] {
+        margin-bottom: -10px;
+        width: 30px;
+        height: 2px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .feature {
+        margin-bottom: 50px;
+        padding-top: 0px;
+    }
+    .carousel-item {
+        height: 200px;
+    }
+    .feat-title {
+        font-size: 12px !important;
+    }
+    .feat-desc {
+        font-size: 8px !important;
+        margin-bottom: -10px;
+    }
+    .feature-carousel .carousel-control-prev-icon,
+    .feature-carousel .carousel-control-next-icon {
+      width: 18px;
+      height: 18px;
+    }
+    .feature-carousel .carousel-indicators [data-bs-target] {
+        margin-bottom: -10px;
+        width: 20px;
+        height: 1px;
+    }
+}
