@@ -1,6 +1,5 @@
 .feature {
     margin-bottom: 100px;
-    padding-top: 50px;
 }
 
 .feature-img {
@@ -44,9 +43,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .feature {
-        padding-top: 20px;
-    }
     .carousel-item {
         height: 400px;
     }
@@ -87,7 +83,6 @@
 @media only screen and (max-width: 425px) {
     .feature {
         margin-bottom: 50px;
-        padding-top: 0px;
     }
     .carousel-item {
         height: 200px;

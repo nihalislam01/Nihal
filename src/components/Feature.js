@@ -4,6 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { bottomFadeUp } from "../utils/Animation";
 
 import '../styles/Feature.css';
+import Title from "./Title";
 
 const features = [
     {
@@ -25,6 +26,7 @@ const Feature = () => {
 
     return (
         <section ref={ref} id="feature" className="section-container feature">
+            <Title title="Features" />
             <motion.div className="about-me-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomFadeUp}>
                 <Carousel className="feature-carousel">
                     {features.map((feature, index) => (

@@ -20,8 +20,8 @@ code {
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .horizontal-line {
@@ -129,8 +129,8 @@ p {
         font-size: 25px;
     }
     .title {
-        margin-bottom: 20px;
-        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 }
 
@@ -145,8 +145,8 @@ p {
     }
     .title {
         gap: 10px;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .big-icons {

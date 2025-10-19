@@ -1,6 +1,7 @@
 .carousel {
     height: 500px;
-    padding: 200px 0px;
+    padding-top: 200px;
+    padding-bottom: 100px;
     width: 100%;
     overflow: hidden;
     display: flex;
