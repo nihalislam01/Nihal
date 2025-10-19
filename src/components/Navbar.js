@@ -21,8 +21,8 @@ const sections = [
         link: "#project"
     },
     {
-        title: "Feature",
-        link: "#feature"
+        title: "Awards",
+        link: "#awards"
     },
 ]
 

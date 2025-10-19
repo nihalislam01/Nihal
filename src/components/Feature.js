@@ -25,8 +25,8 @@ const Feature = () => {
     const isInView = useInView(ref, {once: true, margin: "-50px"});
 
     return (
-        <section ref={ref} id="feature" className="section-container feature">
-            <Title title="Features" />
+        <section ref={ref} id="awards" className="section-container feature">
+            <Title title="Awards & Achievements" />
             <motion.div className="about-me-motion" initial="hidden" animate={isInView ? "visible" : "hidden"} variants={bottomFadeUp}>
                 <Carousel className="feature-carousel">
                     {features.map((feature, index) => (
