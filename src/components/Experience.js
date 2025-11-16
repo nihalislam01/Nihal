@@ -14,7 +14,7 @@ const experience = [
         duration: "Jun 2025 - Present", 
         website: "https://www.hubxpert.com",
         achievements: [
-            " Monitored user data across internal systems and HubSpot CRM, synchronizing cross-platform data such as Monday, Nextech to HubSpot.",
+            "Monitored user data across internal systems and HubSpot CRM, synchronizing cross-platform data such as Monday, Attio to HubSpot.",
             "Designed HubSpot workflows to automate business processes that maintain and optimize CRM operations for the sales representatives.",
             "Implemented Odoo ERP on Google Cloud Platform (GCP), deploying with NGINX, along with customization and module development.",
         ],
